@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -t -t root@codewiggle.tk <<EOF
+ssh -tt root@codewiggle.tk <<EOF
  cd /var/www/codewiggle.tk/jenkins-test
  git pull
  npm install
