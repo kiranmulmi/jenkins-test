@@ -1,19 +1,12 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
+//importing node framework
+var express = require('express');
 
-app.use(cors());
-
+var app = express();
+//Respond with "hello world" for requests that hit our root "/"
 app.get('/', function (req, res) {
-    res.json({
-        success: true,
-        data: "kiran"
-    });
-})
+    res.send('hello world');
+});
+//listen to port 3000 by default
+app.listen(process.env.PORT || 3000);
 
-const server = app.listen(8081, function () {
-    const host = server.address().address
-    const port = server.address().port
-
-    console.log("Example app listening at http://%s:%s", host, port)
-})
+module.exports = app;

@@ -1,23 +1,13 @@
 {
-  "name": "kiran",
-  "version": "1.0.0",
-  "description": "kiran description",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kiranmulmi/jenkins-test.git"
-  },
-  "author": "kiran mulmi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kiranmulmi/jenkins-test/issues"
-  },
-  "homepage": "https://github.com/kiranmulmi/jenkins-test#readme",
+  "name": "node-app",
+  "description": "hello jenkins test app",
+  "version": "0.0.1",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "3.12.0"
+  },
+  "devDependencies": {
+    "mocha": "1.20.1",
+    "supertest": "0.13.0"
   }
 }
