@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ssh root@codewiggle.tk <<EOF
- cd ~/node-app
+ssh -t -t root@codewiggle.tk <<EOF
+ cd /var/www/codewiggle.tk/jenkins-test
  git pull
  npm install
  pm2 restart all
